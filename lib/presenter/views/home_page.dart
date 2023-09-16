@@ -15,7 +15,7 @@ class HomePage extends GetView<HomeController> {
               () => BottomNavigationBar(
             currentIndex: controller.currentIndex.value,
             onTap: controller.changePage,
-            selectedItemColor: Colors.redAccent,
+            selectedItemColor: Colors.blueAccent,
             items: const [
               //  BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
               BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
