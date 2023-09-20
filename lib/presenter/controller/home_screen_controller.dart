@@ -5,14 +5,14 @@ import 'package:get/get.dart';
 import 'package:basicapp2/presenter/bindings/app_bindings.dart';
 import 'package:basicapp2/presenter/views/home_page.dart';
 import 'package:basicapp2/presenter/views/profile_page.dart';
-import 'package:basicapp2/presenter/views/search_page.dart';
+import 'package:basicapp2/presenter/views/login_page.dart';
 
 class HomeController extends GetxController {
   static HomeController get to => Get.find();
   var currentIndex = 0.obs;
 
   final pages = <String>[
-    '/Search',
+    '/Login',
     '/Profile',
     '/Settings',
     '/Favorites',
@@ -25,11 +25,11 @@ class HomeController extends GetxController {
 
   Route? onGenerateRoute(RouteSettings settings) {
 
-    if (settings.name == '/Search') {
+    if (settings.name == '/Login') {
       return GetPageRoute(
         settings: settings,
-        page: () => SearchPage(),
-        binding: SearchBinding(),
+        page: () => LoginPage(),
+        binding: LoginBinding(),
       );
     }
     if (settings.name == '/Profile') {

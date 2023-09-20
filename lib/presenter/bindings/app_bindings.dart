@@ -3,7 +3,7 @@ import 'package:basicapp2/presenter/controller/settings_controller.dart';
 import 'package:get/get.dart';
 import 'package:basicapp2/presenter/controller/home_screen_controller.dart';
 import 'package:basicapp2/presenter/controller/profile_controller.dart';
-import 'package:basicapp2/presenter/controller/search_list_controller.dart';
+import 'package:basicapp2/presenter/controller/login_list_controller.dart';
 
 class HomeBinding extends Bindings {
   @override
@@ -19,10 +19,10 @@ class ProfileBinding extends Bindings {
   }
 }
 
-class SearchBinding extends Bindings {
+class LoginBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<SearchPageController>(() => SearchPageController());
+    Get.lazyPut<LoginPageController>(() => LoginPageController());
   }
 }
 
